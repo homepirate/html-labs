@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Фотогалерея</title>
+    <style>
+        body, ul, li {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery {
+            list-style-type: none;
+        }
+        .gallery li {
+            flex-basis: 33.33%;
+            box-sizing: border-box;
+            padding: 2%;
+            padding-left: 7%;
+    }
+        .gallery li img {
+            padding: 4%;
+            border: 0.4rem solid black;
+            display: block;
+            width: 100%;
+            object-fit: contain;
+    }
+    </style>
+</head>
+<body>
+<section class="gallery">
+    <ul>
+        <li><img src="images/picture1.jpg"></li>
+        <li><img src="images/picture2.jpg"></li>
+        <li><img src="images/picture3.jpg"></li>
+        <li><img src="images/picture4.jpg"></li>
+        <li><img src="images/picture5.jpg"></li>
+        <li><img src="images/picture6.jpg"></li>
+        <li><img src="images/picture7.jpg"></li>
+        <li><img src="images/picture8.jpg"></li>
+        <li><img src="images/picture9.jpg"></li>
+    </ul>
+</section>
+</body>
+</html>
