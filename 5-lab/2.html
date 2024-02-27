@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Адаптивная форма</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        button{
+            color:white;
+            background-color: black;
+            width: 30%;
+            height: auto;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        form {
+            width: 12rem;
+            height: 6rem;
+            padding-top: 20px;
+            border: solid grey 2px;
+            position: relative;
+            border-radius: 2%;
+            padding: 2%;
+            z-index: 0;
+        }
+
+        input{
+            width: 50%;
+            margin: 1%;
+            box-sizing: border-box;
+        }
+    .login-text{
+        margin-bottom: -12px;
+        width: 4rem;
+        background-color: white;
+        border: solid grey 2px;
+        border-radius: 5%;
+        position: relative;
+        z-index: 1;
+    }
+    label {
+            position: relative;
+        }
+        .icon {
+            position: absolute;
+            left: 110%;
+            top: 55%;
+            transform: translateY(-50%);
+        }
+
+    </style>
+</head>
+<body>
+<div class="login-text">Login</div>
+    <form>
+        <div>
+           <label for="username">Username<i class="icon fas fa-user"></i></label>
+            <input id="username">
+        </div>
+        <div>
+            <label for="password">Password <i class="icon fas fa-key"></i></label>
+            <input type="password" id="password">
+        </div>
+        <button>Login</button>
+    </form>
+</body>
+</html>
