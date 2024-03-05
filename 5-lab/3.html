@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <title>Адаптивные карты</title>
     <style>
-        body{
-                 background-color: rgb(238, 238, 238);
-                 font-family: Helvetica, sans-serif;
-             }
-             section{
-                 background-color: rgb (255, 255, 255);
-                 box-shadow: 0 0 10px rgba(0,0,0,0.5);
-                 border-radius: 2%;
-                 width: 50%;
-                 }
-             h2{
-                 font-family: Georgia, serif;
-                 font-size: 1em/1.2;
-             }
-             button {
-             color: white;
-             background-color: rgb(0, 153, 0);
-             border: none;
-             cursor: pointer;
-             border-radius: 2px;
-             }
-             img{
-                width: 100%;
-                 height: auto;
-                 border-radius: 2% 2% 0 0;
-             }
+        body {
+           background-color: rgb(238, 238, 238);
+           font-family: Helvetica, sans-serif;
+        }
+
+       section {
+           display: flex;
+           flex-direction: column;
+           background-color: rgb(255, 255, 255);
+           margin: auto;
+           border-radius: 5px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+           border-radius: 2%;
+           max-width: 400px;
+       }
+       h2 {
+           font-family: Georgia, serif;
+           font-size: 1em/1.2;
+       }
+       button {
+           background-color: rgb(0, 153, 0);
+           color: white;
+           border: none;
+           margin: 10px;
+           padding: 5px 10px;
+           border-radius: 3px;
+       }
+        .button-container {
+           display: flex;
+           justify-content: flex-end;
+       }
+       .text-container{
+            text-align: left;
+            padding: 10px;
+       }
+
+        img {
+        border-radius: 2% 2% 0 0;
+        }
     </style>
 </head>
 <body>
@@ -37,11 +50,13 @@
         <div>
             <img src="https://images.unsplash.com/photo-1538230942844-e89414a0692d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34dcc54db235ce71b59c1d5ada2bdc4&auto=format&fit=crop&w=400&q=8">
         </div>
-        <div>
+        <div class="text-container">
             <h2>Card Title</h2>
             <p>Short description of what this is all about - crafted to make people interested
                 See more</p>
-            <button>See more</button>
+            <div class="button-container">
+                <button>See more</button>
+            </div>
         </div>
     </section>
 </body>
